@@ -4,336 +4,336 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://hjelev.github.io/</loc>
-<lastmod>2018-02-25T16:35:53-00:00</lastmod>
+<loc>http://maxblo.ga/</loc>
+<lastmod>2018-02-25T16:53:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/archives.html</loc>
-<lastmod>2018-02-25T16:35:53-00:00</lastmod>
+<loc>http://maxblo.ga/archives.html</loc>
+<lastmod>2018-02-25T16:53:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tags.html</loc>
-<lastmod>2018-02-25T16:35:53-00:00</lastmod>
+<loc>http://maxblo.ga/tags.html</loc>
+<lastmod>2018-02-25T16:53:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/categories.html</loc>
-<lastmod>2018-02-25T16:35:53-00:00</lastmod>
+<loc>http://maxblo.ga/categories.html</loc>
+<lastmod>2018-02-25T16:53:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/translate-your-flask-site.html</loc>
+<loc>http://maxblo.ga/translate-your-flask-site.html</loc>
 <lastmod>2018-02-24T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/build-cheap-multi-room-audio-system.html</loc>
+<loc>http://maxblo.ga/build-cheap-multi-room-audio-system.html</loc>
 <lastmod>2018-01-21T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/multiple-python-sites-on-one-host.html</loc>
+<loc>http://maxblo.ga/multiple-python-sites-on-one-host.html</loc>
 <lastmod>2018-01-21T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/iptables-example.html</loc>
+<loc>http://maxblo.ga/iptables-example.html</loc>
 <lastmod>2018-01-20T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/os-raspberry-pi.html</loc>
+<loc>http://maxblo.ga/os-raspberry-pi.html</loc>
 <lastmod>2018-01-20T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/python-modules.html</loc>
+<loc>http://maxblo.ga/python-modules.html</loc>
 <lastmod>2018-01-20T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/live-webcam-feeds.html</loc>
+<loc>http://maxblo.ga/live-webcam-feeds.html</loc>
 <lastmod>2018-01-19T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/rpi-software.html</loc>
+<loc>http://maxblo.ga/rpi-software.html</loc>
 <lastmod>2018-01-19T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/collection-of-free-software-for-windows.html</loc>
+<loc>http://maxblo.ga/collection-of-free-software-for-windows.html</loc>
 <lastmod>2018-01-15T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/category/linux-sysadmin.html</loc>
+<loc>http://maxblo.ga/category/linux-sysadmin.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/category/python.html</loc>
+<loc>http://maxblo.ga/category/python.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/category/raspberry-pi.html</loc>
+<loc>http://maxblo.ga/category/raspberry-pi.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/category/webcams.html</loc>
+<loc>http://maxblo.ga/category/webcams.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/category/windows.html</loc>
+<loc>http://maxblo.ga/category/windows.html</loc>
 <lastmod>2018-01-15T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/firewall.html</loc>
+<loc>http://maxblo.ga/tag/firewall.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/linux.html</loc>
+<loc>http://maxblo.ga/tag/linux.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/rpi.html</loc>
+<loc>http://maxblo.ga/tag/rpi.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/distributions.html</loc>
+<loc>http://maxblo.ga/tag/distributions.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/logitec-media-server.html</loc>
+<loc>http://maxblo.ga/tag/logitec-media-server.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/spotify.html</loc>
+<loc>http://maxblo.ga/tag/spotify.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/network.html</loc>
+<loc>http://maxblo.ga/tag/network.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/flask.html</loc>
+<loc>http://maxblo.ga/tag/flask.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/babel.html</loc>
+<loc>http://maxblo.ga/tag/babel.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/multiple-sites.html</loc>
+<loc>http://maxblo.ga/tag/multiple-sites.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/live.html</loc>
+<loc>http://maxblo.ga/tag/live.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/translate.html</loc>
+<loc>http://maxblo.ga/tag/translate.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/iptables.html</loc>
+<loc>http://maxblo.ga/tag/iptables.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/raspberry-pi.html</loc>
+<loc>http://maxblo.ga/tag/raspberry-pi.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/python.html</loc>
+<loc>http://maxblo.ga/tag/python.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/lms.html</loc>
+<loc>http://maxblo.ga/tag/lms.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/free.html</loc>
+<loc>http://maxblo.ga/tag/free.html</loc>
 <lastmod>2018-01-15T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/nginx.html</loc>
+<loc>http://maxblo.ga/tag/nginx.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/web-hosting.html</loc>
+<loc>http://maxblo.ga/tag/web-hosting.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/webcam.html</loc>
+<loc>http://maxblo.ga/tag/webcam.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/multi-room.html</loc>
+<loc>http://maxblo.ga/tag/multi-room.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/windows.html</loc>
+<loc>http://maxblo.ga/tag/windows.html</loc>
 <lastmod>2018-01-15T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/modules.html</loc>
+<loc>http://maxblo.ga/tag/modules.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/hosting.html</loc>
+<loc>http://maxblo.ga/tag/hosting.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/multi-language.html</loc>
+<loc>http://maxblo.ga/tag/multi-language.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/feeds.html</loc>
+<loc>http://maxblo.ga/tag/feeds.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/audio.html</loc>
+<loc>http://maxblo.ga/tag/audio.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/os.html</loc>
+<loc>http://maxblo.ga/tag/os.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/tag/software.html</loc>
+<loc>http://maxblo.ga/tag/software.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>https://hjelev.github.io/author/masoko.html</loc>
+<loc>http://maxblo.ga/author/masoko.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
