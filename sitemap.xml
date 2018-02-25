@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/</loc>
-<lastmod>2018-02-25T17:48:31-00:00</lastmod>
+<lastmod>2018-02-25T23:31:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://maxblo.ga/archives.html</loc>
-<lastmod>2018-02-25T17:48:31-00:00</lastmod>
+<lastmod>2018-02-25T23:31:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://maxblo.ga/tags.html</loc>
-<lastmod>2018-02-25T17:48:31-00:00</lastmod>
+<lastmod>2018-02-25T23:31:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://maxblo.ga/categories.html</loc>
-<lastmod>2018-02-25T17:48:31-00:00</lastmod>
+<lastmod>2018-02-25T23:31:09-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,6 +34,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://maxblo.ga/translate-your-flask-site.html</loc>
 <lastmod>2018-02-24T00:00:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://maxblo.ga/static-site-with-python-pelican.html</loc>
+<lastmod>2018-01-25T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -130,7 +137,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://maxblo.ga/tag/pelican.html</loc>
+<lastmod>2018-01-25T00:00:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://maxblo.ga/tag/firewall.html</loc>
+<lastmod>2018-01-20T00:00:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://maxblo.ga/tag/modules.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -256,7 +277,21 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>http://maxblo.ga/tag/multi-room.html</loc>
+<lastmod>2018-01-21T00:00:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>http://maxblo.ga/tag/web-hosting.html</loc>
+<lastmod>2018-01-21T00:00:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://maxblo.ga/tag/audio.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -270,8 +305,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/multi-room.html</loc>
-<lastmod>2018-01-21T00:00:00+00:09</lastmod>
+<loc>http://maxblo.ga/tag/github.html</loc>
+<lastmod>2018-01-25T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -284,8 +319,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/modules.html</loc>
-<lastmod>2018-01-20T00:00:00+00:09</lastmod>
+<loc>http://maxblo.ga/tag/free-domain.html</loc>
+<lastmod>2018-01-25T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -312,8 +347,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/audio.html</loc>
-<lastmod>2018-01-21T00:00:00+00:09</lastmod>
+<loc>http://maxblo.ga/tag/free-hosting.html</loc>
+<lastmod>2018-01-25T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
