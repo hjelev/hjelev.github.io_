@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://home.masoko.net/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="http://home.masoko.net/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="http://home.masoko.net/theme/font-awesome/css/font-awesome.min.css">
+
+
+
+
+    <link rel="shortcut icon" href="http://home.masoko.net/images/avatar2.jpg" type="image/x-icon">
+    <link rel="icon" href="http://home.masoko.net/images/avatar2.jpg" type="image/x-icon">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333">
+
+<meta name="author" content="Masoko" />
+<meta name="description" content="How to build cheap Multy-Room Audio System with raspberry pis and logitec media server. Logitec Media Server LMS is a media server made for the logitec squeezebox Network music players. We will use this software for our project and will build squeezebox players using a raspberry pi, usb soundcard and …" />
+<meta name="keywords" content="lms, multi-room, audio, spotify, logitec media server, rpi">
+
+<meta property="og:site_name" content="My Blog/Notes"/>
+<meta property="og:title" content="Build Afordable Multy-Room Audio System"/>
+<meta property="og:description" content="How to build cheap Multy-Room Audio System with raspberry pis and logitec media server. Logitec Media Server LMS is a media server made for the logitec squeezebox Network music players. We will use this software for our project and will build squeezebox players using a raspberry pi, usb soundcard and …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://home.masoko.net/Build-Afordable-Multy-Room-Audio-System.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-01-21 00:00:00+01:00"/>
+<meta property="article:modified_time" content="2018-01-21 00:00:00+01:00"/>
+<meta property="article:author" content="http://home.masoko.net/author/masoko.html">
+<meta property="article:section" content="Raspberry pi"/>
+<meta property="article:tag" content="lms"/>
+<meta property="article:tag" content="multi-room"/>
+<meta property="article:tag" content="audio"/>
+<meta property="article:tag" content="spotify"/>
+<meta property="article:tag" content="logitec media server"/>
+<meta property="article:tag" content="rpi"/>
+<meta property="og:image" content="http://home.masoko.net/images/avatar2.jpg">
+
+  <title>My Blog/Notes &ndash; Build Afordable Multy-Room Audio System</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="http://home.masoko.net">
+        <img src="http://home.masoko.net/images/avatar2.jpg" alt="My Blog" title="My Blog">
+      </a>
+      <h1><a href="http://home.masoko.net">My Blog</a></h1>
+
+<p>and notes</p>
+
+      <ul class="social">
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="http://home.masoko.net">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="Build-Afordable-Multy-Room-Audio-System">Build Afordable Multy-Room Audio System</h1>
+    <p>
+          Posted on Sun 21 January 2018 in <a href="http://home.masoko.net/category/raspberry-pi.html">Raspberry pi</a>
+
+
+        &#8226; 3 min read
+    </p>
+  </header>
+
+
+  <div>
+    <p>How to build cheap Multy-Room Audio System with raspberry pis and logitec media server.
+Logitec Media Server <a href="https://www.mysqueezebox.com/download">LMS</a> is a media server made for the logitec squeezebox Network music players. We will use this software for our project and will build squeezebox players using a raspberry pi, usb soundcard and some multimedia speakers.</p>
+<p>I have started my multi-room audio system with Logitech Multimedia 2.1 Speakers Z213 as they are very cheap and offer decent sound for their price - around $25.</p>
+<h2>The parts we need.</h2>
+<ol>
+<li><strong>Raspberry Pi Zero W</strong> (you can use other models but this is the perfect one)</li>
+<li>Any <strong>sd card</strong> that can fit raspbian light - bigger cards will last longer.</li>
+<li><strong>Usb sound card</strong> (I have used this cheap $1.5 <a href="https://www.gearbest.com/cables-connectors/pp_621980.html">sound card</a> from gearbest.com)</li>
+<li><strong>Micro USB Male to USB Female Cable Adapter</strong> - we need this as the raspberry pi zero have only one micro usb port.</li>
+<li>Multimedia Speakers with 3.5 inch audio input.</li>
+<li>You'll need this if you don't use pi zero w: <strong>USB hub</strong> and <strong>USB network card</strong> - wifi or wired depending on your need.</li>
+</ol>
+<h2>Preparing the raspberry pi sd card:</h2>
+<p>I'll show you how to prepare the sd card with a windows computer. This is the SD card we'll use for our network music players.</p>
+<ul>
+<li>Download and install <a href="https://sourceforge.net/projects/win32diskimager/">Win32 Disk Imager</a></li>
+<li>Download <a href="https://www.raspberrypi.org/downloads/raspbian/">Raspbian Stretch Lite</a> image from raspberrypi.org site. (you can also use the full version but there is no need to do so and its bigger)</li>
+<li>Use Win32 disk imager to write the rasbian image you have just downloaded to the sd card.</li>
+<li>If you plan to connect this player/rpi via wifi, now is the time to configure the wifi network credentials (if you don't do so now you'll have to attach monitor and a keyboard to your rpi later)</li>
+</ul>
+<p>Create a file <strong>wpa_supplicant.conf</strong> and place it in the boot partition.</p>
+<p>wpa_supplicant.conf</p>
+<div class="highlight"><pre>country=AU  #omit if US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+network={
+    ssid=&quot;YourNetworkSSID-1&quot;
+    psk=&quot;passwordOne&quot;
+}
+</pre></div>
+
+
+<ul>
+<li>To enable ssh create an empty file named <strong>ssh</strong> and place it in the boot partition.</li>
+<li>Insert the sd card in the raspberry pi, it shold boot and connect to the network.</li>
+<li>Now you need to find the ip address of the raspberry pi, you can do that by checking the dhcp clients in you router control panel or use your phone and application like <a href="https://play.google.com/store/apps/details?id=com.overlook.android.fing">Fing</a> (there is also an iphone version of Fing)</li>
+<li>Once you find the ip address ssh to it using <a href="https://www.putty.org/">Putty</a> or your favourite ssh client.</li>
+<li>Update your system packages by running
+    $ sudo apt-get -y update &amp;&amp; sudo apt-get -y dist-upgrade
+This will take some time.</li>
+<li>
+<p>Install some libraries that are needed by squeezelite 
+    $ sudo apt-get install -y libflac-dev libfaad2 libmad0</p>
+</li>
+<li>
+<p>Create a folder for squeezelite and download it:</p>
+</li>
+</ul>
+<pre>$ mkdir squeezelite
+$ cd squeezelite
+$ wget -O squeezelite-armv6hf.tar.gz http://www.gerrelt.nl/RaspberryPi/squeezelite_ralph/squeezelite-armv6hf.tar.gz
+$ tar -xvzf squeezelite-armv6hf.tar.gz</pre>
+
+<ul>
+<li>Now set the sound level:</li>
+</ul>
+<pre>$ sudo alsamixer</pre>
+
+<p>Use the F6 key to select the right soundcard (I am using an USB soundcard), and then set the volume using the arrow keys. Set the volume as high as possible, without it getting into the “red”.
+I also set the microphone volume to zero, to make sure it will not cause any noise.</p>
+<ul>
+<li>Before we can run squeezelite we need to find the name of our usb sound card.</li>
+</ul>
+<pre>$ ./squeezelite -l</pre>
+
+<p>When playing music the raspberry pi cpu load should be around 0.15 .</p>
+<p>WIP</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://home.masoko.net/tag/lms.html">lms</a>
+      <a href="http://home.masoko.net/tag/multi-room.html">multi-room</a>
+      <a href="http://home.masoko.net/tag/audio.html">audio</a>
+      <a href="http://home.masoko.net/tag/spotify.html">spotify</a>
+      <a href="http://home.masoko.net/tag/logitec-media-server.html">logitec media server</a>
+      <a href="http://home.masoko.net/tag/rpi.html">rpi</a>
+    </p>
+  </div>
+
+
+  <div class="neighbors">
+    <a class="btn float-left" href="http://home.masoko.net/multiple-python-sites-on-one-host.html" title="How to Host Multiple Python Apps on the Same Host With Nginx">
+      <i class="fa fa-angle-left"></i>     Previous Post
+
+    </a>
+  </div>
+
+  <div class="related-posts">
+    <h4>    You might enjoy
+</h4>
+    <ul class="related-posts">
+      <li><a href="http://home.masoko.net/iptables-example.html">Basic IPTables Tutorial</a></li>
+      <li><a href="http://home.masoko.net/os-raspberry-pi.html">OS for Raspberry Pi</a></li>
+      <li><a href="http://home.masoko.net/rpi-software.html">Software for Raspberry Pi</a></li>
+    </ul>
+  </div>
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'my-blog-notes';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>&copy;  2018</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " My Blog/Notes ",
+  "url" : "http://home.masoko.net",
+  "image": "http://home.masoko.net/images/avatar2.jpg",
+  "description": "Foo Bar's Thoughts and Writings"
+}
+</script>
+
+  
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+	var sc_project=11606772; 
+	var sc_invisible=1; 
+	var sc_security="2a877137"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="Web Analytics
+	Made Easy - StatCounter" href="http://statcounter.com/"
+	target="_blank"><img class="statcounter"
+	src="//c.statcounter.com/11606772/0/2a877137/1/" alt="Web
+	Analytics Made Easy - StatCounter"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>

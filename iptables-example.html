@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="http://home.masoko.net/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="http://home.masoko.net/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="http://home.masoko.net/theme/font-awesome/css/font-awesome.min.css">
+
+
+
+
+    <link rel="shortcut icon" href="http://home.masoko.net/images/avatar2.jpg" type="image/x-icon">
+    <link rel="icon" href="http://home.masoko.net/images/avatar2.jpg" type="image/x-icon">
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333">
+
+<meta name="author" content="Masoko" />
+<meta name="description" content="This is the iptables configuration I have used to secure my pihole instance before exposing it publicly. This configuration will close all ports, then allow connections on port 80, 443, 123 and allow ping to IP 192.168.0.103 which is hosting my pihole. Allow access to port 53 …" />
+<meta name="keywords" content="linux, rpi, iptables, network, firewall">
+
+<meta property="og:site_name" content="My Blog/Notes"/>
+<meta property="og:title" content="Basic IPTables Tutorial"/>
+<meta property="og:description" content="This is the iptables configuration I have used to secure my pihole instance before exposing it publicly. This configuration will close all ports, then allow connections on port 80, 443, 123 and allow ping to IP 192.168.0.103 which is hosting my pihole. Allow access to port 53 …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="http://home.masoko.net/iptables-example.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-01-20 00:00:00+01:00"/>
+<meta property="article:modified_time" content="2018-01-20 00:00:00+01:00"/>
+<meta property="article:author" content="http://home.masoko.net/author/masoko.html">
+<meta property="article:section" content="Linux Sysadmin"/>
+<meta property="article:tag" content="linux"/>
+<meta property="article:tag" content="rpi"/>
+<meta property="article:tag" content="iptables"/>
+<meta property="article:tag" content="network"/>
+<meta property="article:tag" content="firewall"/>
+<meta property="og:image" content="http://home.masoko.net/images/avatar2.jpg">
+
+  <title>My Blog/Notes &ndash; Basic IPTables Tutorial</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="http://home.masoko.net">
+        <img src="http://home.masoko.net/images/avatar2.jpg" alt="My Blog" title="My Blog">
+      </a>
+      <h1><a href="http://home.masoko.net">My Blog</a></h1>
+
+<p>and notes</p>
+
+      <ul class="social">
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="http://home.masoko.net">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+      <a href="/tags.html">Tags</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="iptables-example">Basic IPTables Tutorial</h1>
+    <p>
+          Posted on Sat 20 January 2018 in <a href="http://home.masoko.net/category/linux-sysadmin.html">Linux Sysadmin</a>
+
+
+        &#8226; 3 min read
+    </p>
+  </header>
+
+
+  <div>
+    <p>This is the iptables configuration I have used to secure my pihole instance before exposing it publicly.  </p>
+<p>This configuration will close all ports, then allow connections on port 80, 443, 123 and allow ping to IP 192.168.0.103 which is hosting my pihole.
+Allow access to port 53 from your local network. 
+Then it will open port 53 only to IP 46.249.76.212 (you can allow multiple IPs by cloning the 4 lines from the configuration for IP 46.249.76.212 )</p>
+<p>First we need to create a file that will hold our iptables rules.<br>
+I have chosen to name this file <strong>iptables.up.rules</strong> and create it in <strong>/etc</strong> folder. You can pick any name and location you like, just remember to use them in the auto start bash script we'll create at the end of this tutorial.</p>
+<p>Run the command below to list the current iptables rules:</p>
+<pre>$ sudo iptables --list</pre>
+
+<p>Then run this command to save the current rules in a file that we'll modify in the next step:</p>
+<pre>$ sudo iptables-save > iptables.up.rules
+$ sudo mv iptables.up.rules /etc/iptables.up.rules</pre>
+
+<p>Use your favorite text editor to open the file we just created <strong>/etc/iptables.up.rules</strong> it should look like the one below:</p>
+<div class="highlight"><pre># Generated by iptables-save v1.6.0 on Thu Dec 28 12:35:47 2017
+*filter
+:INPUT ACCEPT [3153:549434]
+:FORWARD ACCEPT [0:0]
+:OUTPUT ACCEPT [2890:317837]
+COMMIT
+</pre></div>
+
+
+<p>Replace the COMMIT command with the text below:</p>
+<div class="highlight"><pre># Don&#39;t forward traffic
+-P FORWARD DROP
+
+# Allow outgoing traffic
+-P OUTPUT ACCEPT
+
+# Allow established traffic
+-A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Allow localhost traffic
+-A INPUT -i lo -j ACCEPT
+
+#############################
+#  MANAGEMENT RULES
+#############################
+# Allow SSH (alternate port)
+-A INPUT -p tcp --dport 22 -j ACCEPT
+
+#############################
+#  ACCESS RULES
+#############################
+# Allow web server
+-A INPUT -p udp --dport 80 -j ACCEPT 
+-A OUTPUT -p udp --sport 80 -j ACCEPT
+-A INPUT -p tcp --dport 80 -j ACCEPT 
+-A OUTPUT -p tcp --sport 80 -j ACCEPT
+
+-A INPUT -p tcp --dport 443 -j ACCEPT 
+-A OUTPUT -p tcp --sport 443 -j ACCEPT
+-A INPUT -p udp --dport 443 -j ACCEPT 
+-A OUTPUT -p udp --sport 443 -j ACCEPT
+
+# Allow ping to 192.168.0.103
+-A INPUT -p icmp --icmp-type 8 -s 0/0 -d 192.168.0.103 -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT
+-A OUTPUT -p icmp --icmp-type 0 -s 192.168.0.103 -d 0/0 -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Allow DNS
+
+# for 46.249.76.212
+
+-A OUTPUT -p udp -o eth0 -d 46.249.76.212 --sport 53 -j ACCEPT
+-A OUTPUT -p udp -o eth0 -d 46.249.76.212 --dport 53 -j ACCEPT
+-A INPUT -p udp -i eth0 -s 46.249.76.212 --sport 53 -j ACCEPT
+-A INPUT -p udp -i eth0 -s 46.249.76.212 --dport 53 -j ACCEPT
+
+# home - this section allows access to and from your internal network
+-A OUTPUT -p udp -o eth0 -m iprange --dst-range 192.168.0.1-192.168.0.254 --sport 53 -j ACCEPT
+-A OUTPUT -p udp -o eth0 -m iprange --dst-range 192.168.0.1-192.168.0.254 --dport 53 -j ACCEPT
+-A INPUT -p udp -i eth0 -m iprange --src-range 192.168.0.1-192.168.0.254 --sport 53 -j ACCEPT
+-A INPUT -p udp -i eth0 -m iprange --src-range 192.168.0.1-192.168.0.254 --dport 53 -j ACCEPT
+
+# Allow NTP Assuming you are a CLIENT and want to access NTP servers you&#39;d do:
+-A OUTPUT -p udp --dport 123 -j ACCEPT 
+-A INPUT -p udp --sport 123 -j ACCEPT
+
+# Assuming you want to be a server, you&#39;d do
+-A INPUT -p udp --dport 123 -j ACCEPT 
+-A OUTPUT -p udp --sport 123 -j ACCEPT
+
+#############################
+#  DEFAULT DENY
+#############################
+-A INPUT -j DROP
+COMMIT
+</pre></div>
+
+
+<p>Run this command to apply the new rules and check if they are working as expected:  </p>
+<pre>sudo /sbin/iptables-restore < /etc/iptables.up.rules</pre>
+
+<p>If there are no errors and you are not disconnected from the system we should be all set.   </p>
+<p>Now we need to make sure the iptables rules are loaded after the system is restarted.</p>
+<p>To do so go to <strong>/etc/network/if-pre-up.d/</strong> and create a file named <strong>iptables</strong>, this is a bash file that will be executed before each network connection,
+the content of this file should be as below:</p>
+<pre>#!/bin/sh
+sudo /sbin/iptables-restore < /etc/iptables.up.rules</pre>
+
+<p>You'll also need to make sure that the file <strong>iptables</strong> have executable permissions:</p>
+<pre>sudo chmod +x iptables</pre>
+
+<p>Everything should be configured now, restart your system to make sure the rules are loaded properly.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="http://home.masoko.net/tag/linux.html">linux</a>
+      <a href="http://home.masoko.net/tag/rpi.html">rpi</a>
+      <a href="http://home.masoko.net/tag/iptables.html">iptables</a>
+      <a href="http://home.masoko.net/tag/network.html">network</a>
+      <a href="http://home.masoko.net/tag/firewall.html">firewall</a>
+    </p>
+  </div>
+
+
+  <div class="neighbors">
+    <a class="btn float-left" href="http://home.masoko.net/os-raspberry-pi.html" title="OS for Raspberry Pi">
+      <i class="fa fa-angle-left"></i>     Previous Post
+
+    </a>
+    <a class="btn float-right" href="http://home.masoko.net/multiple-python-sites-on-one-host.html" title="How to Host Multiple Python Apps on the Same Host With Nginx">
+          Next Post
+ <i class="fa fa-angle-right"></i>
+    </a>
+  </div>
+
+  <div class="related-posts">
+    <h4>    You might enjoy
+</h4>
+    <ul class="related-posts">
+      <li><a href="http://home.masoko.net/os-raspberry-pi.html">OS for Raspberry Pi</a></li>
+      <li><a href="http://home.masoko.net/multiple-python-sites-on-one-host.html">How to Host Multiple Python Apps on the Same Host With Nginx</a></li>
+      <li><a href="http://home.masoko.net/build-cheap-multi-room-audio-system.html">Build a Cheap Multi-Room Audio System</a></li>
+      <li><a href="http://home.masoko.net/rpi-software.html">Software for Raspberry Pi</a></li>
+    </ul>
+  </div>
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'my-blog-notes';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>&copy;  2018</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " My Blog/Notes ",
+  "url" : "http://home.masoko.net",
+  "image": "http://home.masoko.net/images/avatar2.jpg",
+  "description": "Foo Bar's Thoughts and Writings"
+}
+</script>
+
+  
+	<!-- Start of StatCounter Code for Default Guide -->
+	<script type="text/javascript">
+	var sc_project=11606772; 
+	var sc_invisible=1; 
+	var sc_security="2a877137"; 
+	var scJsHost = (("https:" == document.location.protocol) ?
+	"https://secure." : "http://www.");
+	document.write("<sc"+"ript type='text/javascript' src='" +
+	scJsHost+
+	"statcounter.com/counter/counter.js'></"+"script>");
+	</script>
+	<noscript><div class="statcounter"><a title="Web Analytics
+	Made Easy - StatCounter" href="http://statcounter.com/"
+	target="_blank"><img class="statcounter"
+	src="//c.statcounter.com/11606772/0/2a877137/1/" alt="Web
+	Analytics Made Easy - StatCounter"></a></div></noscript>
+	<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
