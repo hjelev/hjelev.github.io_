@@ -33,12 +33,12 @@
     <meta name="msapplication-TileColor" content="#333">
 
 <meta name="author" content="Masoko" />
-<meta name="description" content="In this articel I&#39;ll show you how to create a static site with Pelican and host it for free at GitHub Pages. Pelican is a static site generator, written in Python, that requires no database or server-side logic." />
-<meta name="keywords" content="python, pelican, github, free hosting, free domain">
+<meta name="description" content="In this articel I&#39;ll show you how to create a static html site with Pelican and host it for free at GitHub Pages. Pelican is a static site generator, written in Python, that requires no database or server-side logic. Installing Pelican The easiest way to install Pelican is using pip …" />
+<meta name="keywords" content="python, pelican, github, free hosting, free domain, Jinja">
 
 <meta property="og:site_name" content="MaxBlo.ga"/>
 <meta property="og:title" content="How to create a static site with python and host it for free"/>
-<meta property="og:description" content="In this articel I&#39;ll show you how to create a static site with Pelican and host it for free at GitHub Pages. Pelican is a static site generator, written in Python, that requires no database or server-side logic."/>
+<meta property="og:description" content="In this articel I&#39;ll show you how to create a static html site with Pelican and host it for free at GitHub Pages. Pelican is a static site generator, written in Python, that requires no database or server-side logic. Installing Pelican The easiest way to install Pelican is using pip …"/>
 <meta property="og:locale" content="en_US"/>
 <meta property="og:url" content="http://maxblo.ga/static-site-with-python-pelican.html"/>
 <meta property="og:type" content="article"/>
@@ -51,6 +51,7 @@
 <meta property="article:tag" content="github"/>
 <meta property="article:tag" content="free hosting"/>
 <meta property="article:tag" content="free domain"/>
+<meta property="article:tag" content="Jinja"/>
 <meta property="og:image" content="http://maxblo.ga/images/avatar2.jpg">
 
   <title>MaxBlo.ga &ndash; How to create a static site with python and host it for free</title>
@@ -93,14 +94,119 @@
           Posted on Thu 25 January 2018 in <a href="http://maxblo.ga/category/python.html">Python</a>
 
 
-        &#8226; 1 min read
+        &#8226; 3 min read
     </p>
   </header>
 
 
   <div>
-    <p>In this articel I'll show you how to create a static site with Pelican and host it for free at <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-<a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> is a static site generator, written in Python, that requires no database or server-side logic.</p>
+    <p>In this articel I'll show you how to create a static html site with Pelican and host it for free at <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+<p><a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> is a static site generator, written in Python, that requires no database or server-side logic.</p>
+<h3>Installing Pelican</h3>
+<p>The easiest way to install Pelican is using <code>pip</code>, use the command below to install it along with the Markdown module:</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo pip install pelican Markdown
+</pre></div>
+
+
+<h3>Initialize your site</h3>
+<p>Once Pelican has been installed, you can create a skeleton project via the <code>pelican-quickstart</code> command, which begins by asking some questions about your site:</p>
+<div class="highlight"><pre><span class="nv">$ </span>pelican-quickstart
+</pre></div>
+
+
+<p>Once you answer all questions Pelican will create the files and folders shown below:</p>
+<div class="highlight"><pre>yourproject/
+├── content
+│   ├── (pages)          # These folders are not auto-created
+│   ├── (posts) 
+│   └── (images)
+├── output
+├── develop_server.sh
+├── fabfile.py
+├── Makefile
+├── pelicanconf.py       # Main settings file
+└── publishconf.py       # Settings to use when ready to publish
+</pre></div>
+
+
+<p>Your site content should be placed in the content folder. If you plan to create a blog, you'll need to create a folder named <code>posts</code> in the <code>content</code> folder, if you need just static pages that are not chronological create a folder named <code>pages</code>.</p>
+<p>The images for your site or blog should be located in the <code>content/images</code> folder.</p>
+<p>You also need to tell Pelican that this folder holds your static content and images by adding the line below to 'pelicanconf.py' :</p>
+<div class="highlight"><pre>STATIC_PATHS = [&#39;images&#39;]
+</pre></div>
+
+
+<p>You can have more than one folder for static content and you can also pick another location.</p>
+<h3>Building your content</h3>
+<p>To create a new page or blog post you need to create a file in the <code>pages</code> or <code>posts</code> folder.
+This file needs to be ending in .md, .markdown, .mkd, or .mdown and contain text formated with markdown syntax. </p>
+<p>Your file may contain the following meta-data (not all values are mandatory)</p>
+<div class="highlight"><pre>Title: My post title
+Date: 2018-02-03 11:21
+Modified: 2018-02-05 17:30
+Category: Python
+Tags: pelican, publishing
+Slug: my-blog-post
+Authors: John Smith, Hristo Jelev
+Summary: Short version for index and feeds
+
+This is the content of my first blog post.
+</pre></div>
+
+
+<p>To add images to your content use the markdown below:</p>
+<div class="highlight"><pre><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">](</span><span class="n">images</span><span class="o">/</span><span class="n">filename</span><span class="p">.</span><span class="n">jpg</span><span class="p">)</span>
+</pre></div>
+
+
+<p>If you are not familiar with markdown syntax look at <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank">markdown cheat sheet</a></p>
+<p>Once you create all the pages and articles its time to generate your site html.</p>
+<h3>Generating your site HTML</h3>
+<p>To generate your site, go to your project root folder and run the command below:</p>
+<div class="highlight"><pre><span class="nv">$ </span>pelican content
+</pre></div>
+
+
+<p>You can also use:</p>
+<div class="highlight"><pre><span class="nv">$ </span>pelican -r
+</pre></div>
+
+
+<p>This command will regenerate your site each time a change is detected.</p>
+<p>When the generation is complete all the files (html, images, css and maybe others) for your new site will be located in the <code>output</code> folder.</p>
+<h3>Preview your site</h3>
+<p>Its useful to view your site before uploading it to your hosting. To run a local web server use one of the commands below.</p>
+<p>For Python 2, run:</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>output
+<span class="nv">$ </span>python -m SimpleHTTPServer
+</pre></div>
+
+
+<p>For Python 3, run:</p>
+<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>output
+<span class="nv">$ </span>python -m http.server
+</pre></div>
+
+
+<p>Once you start the web server you can preview your site at http://localhost:8000/</p>
+<h3>Hosting</h3>
+<p>One of the best free places to host your static site for free is <a href="https://pages.github.com/" target="_blank">Github Pages</a></p>
+<p>On github pages you'll find detailed instructions how to upload your site with git.
+If you don't have git installed you can install it with:</p>
+<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install git
+</pre></div>
+
+
+<p>Once your site is uploaded to github pages its url will look like this https://username.github.io .</p>
+<p>You can change this by adding a custom domain to your github repository.
+If you don't have a domain name you can get one for free from http://www.dot.tk - they offer five domain extension for free ( .tk, .ga, .ml, .cf and .gq)</p>
+<p>Follow your DNS provider's instructions to create two A records that point your custom domain to the following IP addresses:</p>
+<div class="highlight"><pre>192.30.252.153
+192.30.252.154
+</pre></div>
+
+
+<p><a href="https://help.github.com/articles/setting-up-an-apex-domain/" target="_blank">Here</a> are other ways to point your domain to github pages.</p>
   </div>
   <div class="tag-cloud">
     <p>
@@ -109,6 +215,7 @@
       <a href="http://maxblo.ga/tag/github.html">github</a>
       <a href="http://maxblo.ga/tag/free-hosting.html">free hosting</a>
       <a href="http://maxblo.ga/tag/free-domain.html">free domain</a>
+      <a href="http://maxblo.ga/tag/jinja.html">Jinja</a>
     </p>
   </div>
 
@@ -129,8 +236,8 @@
 </h4>
     <ul class="related-posts">
       <li><a href="http://maxblo.ga/python-modules.html">Python Modules I Use</a></li>
-      <li><a href="http://maxblo.ga/multiple-python-sites-on-one-host.html">How to Host Multiple Python Apps on the Same Host With Nginx</a></li>
       <li><a href="http://maxblo.ga/translate-your-flask-site.html">How to translate your Flask site with Babel</a></li>
+      <li><a href="http://maxblo.ga/multiple-python-sites-on-one-host.html">How to Host Multiple Python Apps on the Same Host With Nginx</a></li>
     </ul>
   </div>
 
