@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/</loc>
-<lastmod>2018-03-08T23:27:16-00:00</lastmod>
+<lastmod>2018-03-08T23:35:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://maxblo.ga/archives.html</loc>
-<lastmod>2018-03-08T23:27:16-00:00</lastmod>
+<lastmod>2018-03-08T23:35:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://maxblo.ga/tags.html</loc>
-<lastmod>2018-03-08T23:27:16-00:00</lastmod>
+<lastmod>2018-03-08T23:35:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://maxblo.ga/categories.html</loc>
-<lastmod>2018-03-08T23:27:16-00:00</lastmod>
+<lastmod>2018-03-08T23:35:28-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -40,7 +40,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/static-site-with-python-pelican.html</loc>
-<lastmod>2018-01-25T00:00:00+01:00</lastmod>
+<lastmod>2018-03-08T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -110,7 +110,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/category/python.html</loc>
-<lastmod>2018-02-24T00:00:00+00:09</lastmod>
+<lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -138,7 +138,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/tag/pelican.html</loc>
-<lastmod>2018-01-25T00:00:00+00:09</lastmod>
+<lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -194,7 +194,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/tag/jinja.html</loc>
-<lastmod>2018-01-25T00:00:00+00:09</lastmod>
+<lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -257,7 +257,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/tag/python.html</loc>
-<lastmod>2018-02-24T00:00:00+00:09</lastmod>
+<lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -313,7 +313,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/tag/github.html</loc>
-<lastmod>2018-01-25T00:00:00+00:09</lastmod>
+<lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -327,7 +327,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/tag/free-domain.html</loc>
-<lastmod>2018-01-25T00:00:00+00:09</lastmod>
+<lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -355,7 +355,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/tag/free-hosting.html</loc>
-<lastmod>2018-01-25T00:00:00+00:09</lastmod>
+<lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -376,7 +376,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://maxblo.ga/author/masoko.html</loc>
-<lastmod>2018-02-24T00:00:00+00:09</lastmod>
+<lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
