@@ -4,378 +4,378 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://maxblo.ga/</loc>
-<lastmod>2018-03-08T23:41:11-00:00</lastmod>
+<loc>/</loc>
+<lastmod>2018-03-30T21:55:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/archives.html</loc>
-<lastmod>2018-03-08T23:41:11-00:00</lastmod>
+<loc>/archives.html</loc>
+<lastmod>2018-03-30T21:55:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tags.html</loc>
-<lastmod>2018-03-08T23:41:11-00:00</lastmod>
+<loc>/tags.html</loc>
+<lastmod>2018-03-30T21:55:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/categories.html</loc>
-<lastmod>2018-03-08T23:41:11-00:00</lastmod>
+<loc>/categories.html</loc>
+<lastmod>2018-03-30T21:55:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/translate-your-flask-site.html</loc>
+<loc>/translate-your-flask-site.html</loc>
 <lastmod>2018-02-24T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/static-site-with-python-pelican.html</loc>
+<loc>/static-site-with-python-pelican.html</loc>
 <lastmod>2018-03-08T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/build-cheap-multi-room-audio-system.html</loc>
+<loc>/build-cheap-multi-room-audio-system.html</loc>
 <lastmod>2018-01-21T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/multiple-python-sites-on-one-host.html</loc>
+<loc>/multiple-python-sites-on-one-host.html</loc>
 <lastmod>2018-01-21T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/iptables-example.html</loc>
+<loc>/iptables-example.html</loc>
 <lastmod>2018-01-20T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/os-raspberry-pi.html</loc>
+<loc>/os-raspberry-pi.html</loc>
 <lastmod>2018-01-20T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/python-modules.html</loc>
+<loc>/python-modules.html</loc>
 <lastmod>2018-01-20T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/live-webcam-feeds.html</loc>
+<loc>/live-webcam-feeds.html</loc>
 <lastmod>2018-01-19T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/rpi-software.html</loc>
+<loc>/rpi-software.html</loc>
 <lastmod>2018-01-19T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/collection-of-free-software-for-windows.html</loc>
+<loc>/collection-of-free-software-for-windows.html</loc>
 <lastmod>2018-01-15T00:00:00+01:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/category/linux-sysadmin.html</loc>
+<loc>/category/linux-sysadmin.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/category/python.html</loc>
+<loc>/category/python.html</loc>
 <lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/category/raspberry-pi.html</loc>
+<loc>/category/raspberry-pi.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/category/webcams.html</loc>
+<loc>/category/webcams.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/category/windows.html</loc>
+<loc>/category/windows.html</loc>
 <lastmod>2018-01-15T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/pelican.html</loc>
+<loc>/tag/pelican.html</loc>
 <lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/audio.html</loc>
+<loc>/tag/audio.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/modules.html</loc>
+<loc>/tag/modules.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/linux.html</loc>
+<loc>/tag/linux.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/rpi.html</loc>
+<loc>/tag/rpi.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/distributions.html</loc>
+<loc>/tag/distributions.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/logitec-media-server.html</loc>
+<loc>/tag/logitec-media-server.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/spotify.html</loc>
+<loc>/tag/spotify.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/jinja.html</loc>
+<loc>/tag/jinja.html</loc>
 <lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/flask.html</loc>
+<loc>/tag/flask.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/babel.html</loc>
+<loc>/tag/babel.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/multiple-sites.html</loc>
+<loc>/tag/multiple-sites.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/firewall.html</loc>
+<loc>/tag/firewall.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/live.html</loc>
+<loc>/tag/live.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/translate.html</loc>
+<loc>/tag/translate.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/iptables.html</loc>
+<loc>/tag/iptables.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/raspberry-pi.html</loc>
+<loc>/tag/raspberry-pi.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/python.html</loc>
+<loc>/tag/python.html</loc>
 <lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/lms.html</loc>
+<loc>/tag/lms.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/free.html</loc>
+<loc>/tag/free.html</loc>
 <lastmod>2018-01-15T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/nginx.html</loc>
+<loc>/tag/nginx.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/multi-room.html</loc>
+<loc>/tag/multi-room.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/web-hosting.html</loc>
+<loc>/tag/web-hosting.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/network.html</loc>
+<loc>/tag/network.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/webcam.html</loc>
+<loc>/tag/webcam.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/github.html</loc>
+<loc>/tag/github.html</loc>
 <lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/windows.html</loc>
+<loc>/tag/windows.html</loc>
 <lastmod>2018-01-15T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/free-domain.html</loc>
+<loc>/tag/free-domain.html</loc>
 <lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/hosting.html</loc>
+<loc>/tag/hosting.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/multi-language.html</loc>
+<loc>/tag/multi-language.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/feeds.html</loc>
+<loc>/tag/feeds.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/free-hosting.html</loc>
+<loc>/tag/free-hosting.html</loc>
 <lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/os.html</loc>
+<loc>/tag/os.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/tag/software.html</loc>
+<loc>/tag/software.html</loc>
 <lastmod>2018-01-19T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://maxblo.ga/author/masoko.html</loc>
+<loc>/author/masoko.html</loc>
 <lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>

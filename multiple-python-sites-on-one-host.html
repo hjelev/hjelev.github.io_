@@ -10,16 +10,16 @@
 
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="http://maxblo.ga/theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="http://maxblo.ga/theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="http://maxblo.ga/theme/font-awesome/css/font-awesome.min.css">
-
-
+  <link rel="stylesheet" type="text/css" href="/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/font-awesome.min.css">
 
 
-    <link rel="shortcut icon" href="http://maxblo.ga/images/avatar2.jpg" type="image/x-icon">
-    <link rel="icon" href="http://maxblo.ga/images/avatar2.jpg" type="image/x-icon">
+
+
+    <link rel="shortcut icon" href="/images/avatar2.jpg" type="image/x-icon">
+    <link rel="icon" href="/images/avatar2.jpg" type="image/x-icon">
 
 
     <!-- Chrome, Firefox OS and Opera -->
@@ -40,11 +40,11 @@
 <meta property="og:title" content="How to Host Multiple Python Apps on the Same Host With Nginx"/>
 <meta property="og:description" content="In this tutorial we assume that there are two python applications / sites running on ports 8000 and 8001 and we need to point example1.com to the application on port 8000 and example2.com to the application on port 8001. First we need to make sure that the domains DNS …"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://maxblo.ga/multiple-python-sites-on-one-host.html"/>
+<meta property="og:url" content="/multiple-python-sites-on-one-host.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2018-01-21 00:00:00+01:00"/>
 <meta property="article:modified_time" content="2018-01-21 00:00:00+01:00"/>
-<meta property="article:author" content="http://maxblo.ga/author/masoko.html">
+<meta property="article:author" content="/author/masoko.html">
 <meta property="article:section" content="Linux Sysadmin"/>
 <meta property="article:tag" content="network"/>
 <meta property="article:tag" content="hosting"/>
@@ -52,7 +52,7 @@
 <meta property="article:tag" content="multiple sites"/>
 <meta property="article:tag" content="nginx"/>
 <meta property="article:tag" content="python"/>
-<meta property="og:image" content="http://maxblo.ga/images/avatar2.jpg">
+<meta property="og:image" content="/images/avatar2.jpg">
 
   <title>MaxBlo.ga &ndash; How to Host Multiple Python Apps on the Same Host With Nginx</title>
 
@@ -60,12 +60,20 @@
 <body>
   <aside>
     <div>
-      <a href="http://maxblo.ga">
-        <img src="http://maxblo.ga/images/avatar2.jpg" alt="MaxBlo.ga" title="MaxBlo.ga">
+      <a href="">
+        <img src="/images/avatar2.jpg" alt="MaxBlo.ga" title="MaxBlo.ga">
       </a>
-      <h1><a href="http://maxblo.ga">MaxBlo.ga</a></h1>
+      <h1><a href="">MaxBlo.ga</a></h1>
 
-<p>A Blog about IT and IOT</p>
+<p>A Blog about IT and IOT</p>  
+    <ul class="list">
+      <li><a href="/category/linux-sysadmin.html">Linux Sysadmin</a> (2)</li>
+      <li><a href="/category/python.html">Python</a> (3)</li>
+      <li><a href="/category/raspberry-pi.html">Raspberry pi</a> (3)</li>
+      <li><a href="/category/webcams.html">Webcams</a> (1)</li>
+      <li><a href="/category/windows.html">Windows</a> (1)</li>
+    </ul>
+
 
       <ul class="social">
       </ul>
@@ -76,7 +84,7 @@
   <main>
 
     <nav>
-      <a href="http://maxblo.ga">    Home
+      <a href="">    Home
 </a>
 
       <a href="/archives.html">Archives</a>
@@ -91,7 +99,7 @@
       
     <h1 id="multiple-python-sites-on-one-host">How to Host Multiple Python Apps on the Same Host With Nginx</h1>
     <p>
-          Posted on Sun 21 January 2018 in <a href="http://maxblo.ga/category/linux-sysadmin.html">Linux Sysadmin</a>
+          Posted on Sun 21 January 2018 in <a href="/category/linux-sysadmin.html">Linux Sysadmin</a>
 
 
         &#8226; 1 min read
@@ -103,7 +111,7 @@
     <p>In this tutorial we assume that there are two python applications / sites running on ports 8000 and 8001 and we need to point example1.com to the application on port 8000 and example2.com to the application on port 8001.</p>
 <p>First we need to make sure that the domains DNS is pointing to the external IP of our server.</p>
 <p>Then we'll need to install nginx which will play the role of a proxy server that will forward the traffic from port 80 to the python application port depending on the origination domain.</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install nginx
+<div class="highlight"><pre><span></span>$ sudo apt-get install nginx
 </pre></div>
 
 
@@ -143,13 +151,13 @@ server {
 </pre>
 
 <p>To enable these sites for nginx, create a symlink from the files we just created to <code>/etc/nginx/sites-enabled/</code>.</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo ln -s /etc/nginx/sites-available/example1.com /etc/nginx/sites-enabled/example1.com
-<span class="nv">$ </span>sudo ln -s /etc/nginx/sites-available/example2.com /etc/nginx/sites-enabled/example2.com
+<div class="highlight"><pre><span></span>$ sudo ln -s /etc/nginx/sites-available/example1.com /etc/nginx/sites-enabled/example1.com
+$ sudo ln -s /etc/nginx/sites-available/example2.com /etc/nginx/sites-enabled/example2.com
 </pre></div>
 
 
 <p>After nginx is restarted to load the new sites we just created they should be resolving properly.</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo /etc/init.d/nginx restart
+<div class="highlight"><pre><span></span>$ sudo /etc/init.d/nginx restart
 </pre></div>
 
 
@@ -157,22 +165,22 @@ server {
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="http://maxblo.ga/tag/network.html">network</a>
-      <a href="http://maxblo.ga/tag/hosting.html">hosting</a>
-      <a href="http://maxblo.ga/tag/web-hosting.html">web hosting</a>
-      <a href="http://maxblo.ga/tag/multiple-sites.html">multiple sites</a>
-      <a href="http://maxblo.ga/tag/nginx.html">nginx</a>
-      <a href="http://maxblo.ga/tag/python.html">python</a>
+      <a href="/tag/network.html">network</a>
+      <a href="/tag/hosting.html">hosting</a>
+      <a href="/tag/web-hosting.html">web hosting</a>
+      <a href="/tag/multiple-sites.html">multiple sites</a>
+      <a href="/tag/nginx.html">nginx</a>
+      <a href="/tag/python.html">python</a>
     </p>
   </div>
 
 
   <div class="neighbors">
-    <a class="btn float-left" href="http://maxblo.ga/iptables-example.html" title="Basic IPTables Tutorial">
+    <a class="btn float-left" href="/iptables-example.html" title="Basic IPTables Tutorial">
       <i class="fa fa-angle-left"></i>     Previous Post
 
     </a>
-    <a class="btn float-right" href="http://maxblo.ga/build-cheap-multi-room-audio-system.html" title="Build a Cheap Multi-Room Audio System">
+    <a class="btn float-right" href="/build-cheap-multi-room-audio-system.html" title="Build a Cheap Multi-Room Audio System">
           Next Post
  <i class="fa fa-angle-right"></i>
     </a>
@@ -182,10 +190,10 @@ server {
     <h4>    You might enjoy
 </h4>
     <ul class="related-posts">
-      <li><a href="http://maxblo.ga/translate-your-flask-site.html">How to translate your Flask site with Babel</a></li>
-      <li><a href="http://maxblo.ga/static-site-with-python-pelican.html">How to create a static site with python and host it for free</a></li>
-      <li><a href="http://maxblo.ga/iptables-example.html">Basic IPTables Tutorial</a></li>
-      <li><a href="http://maxblo.ga/python-modules.html">Python Modules I Use</a></li>
+      <li><a href="/static-site-with-python-pelican.html">How to create a static site with python and host it for free</a></li>
+      <li><a href="/translate-your-flask-site.html">How to translate your Flask site with Babel</a></li>
+      <li><a href="/python-modules.html">Python Modules I Use</a></li>
+      <li><a href="/iptables-example.html">Basic IPTables Tutorial</a></li>
     </ul>
   </div>
 
@@ -221,8 +229,8 @@ server {
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " MaxBlo.ga ",
-  "url" : "http://maxblo.ga",
-  "image": "http://maxblo.ga/images/avatar2.jpg",
+  "url" : "",
+  "image": "/images/avatar2.jpg",
   "description": "Notes about the things I learn"
 }
 </script>

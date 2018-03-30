@@ -10,16 +10,16 @@
 
   <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" type="text/css" href="http://maxblo.ga/theme/stylesheet/style.min.css">
+    <link rel="stylesheet" type="text/css" href="/theme/stylesheet/style.min.css">
 
-  <link rel="stylesheet" type="text/css" href="http://maxblo.ga/theme/pygments/github.min.css">
-  <link rel="stylesheet" type="text/css" href="http://maxblo.ga/theme/font-awesome/css/font-awesome.min.css">
-
-
+  <link rel="stylesheet" type="text/css" href="/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="/theme/font-awesome/css/font-awesome.min.css">
 
 
-    <link rel="shortcut icon" href="http://maxblo.ga/images/avatar2.jpg" type="image/x-icon">
-    <link rel="icon" href="http://maxblo.ga/images/avatar2.jpg" type="image/x-icon">
+
+
+    <link rel="shortcut icon" href="/images/avatar2.jpg" type="image/x-icon">
+    <link rel="icon" href="/images/avatar2.jpg" type="image/x-icon">
 
 
     <!-- Chrome, Firefox OS and Opera -->
@@ -40,11 +40,11 @@
 <meta property="og:title" content="How to create a static site with python and host it for free"/>
 <meta property="og:description" content="In this articel I&#39;ll show you how to create a static html site with Pelican and host it for free at GitHub Pages. Pelican is a static site generator, written in Python, that requires no database or server-side logic. Installing Pelican The easiest way to install Pelican is using pip …"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="http://maxblo.ga/static-site-with-python-pelican.html"/>
+<meta property="og:url" content="/static-site-with-python-pelican.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2018-01-25 00:00:00+01:00"/>
 <meta property="article:modified_time" content="2018-03-08 00:00:00+01:00"/>
-<meta property="article:author" content="http://maxblo.ga/author/masoko.html">
+<meta property="article:author" content="/author/masoko.html">
 <meta property="article:section" content="Python"/>
 <meta property="article:tag" content="python"/>
 <meta property="article:tag" content="pelican"/>
@@ -52,7 +52,7 @@
 <meta property="article:tag" content="free hosting"/>
 <meta property="article:tag" content="free domain"/>
 <meta property="article:tag" content="Jinja"/>
-<meta property="og:image" content="http://maxblo.ga/images/avatar2.jpg">
+<meta property="og:image" content="/images/avatar2.jpg">
 
   <title>MaxBlo.ga &ndash; How to create a static site with python and host it for free</title>
 
@@ -60,12 +60,20 @@
 <body>
   <aside>
     <div>
-      <a href="http://maxblo.ga">
-        <img src="http://maxblo.ga/images/avatar2.jpg" alt="MaxBlo.ga" title="MaxBlo.ga">
+      <a href="">
+        <img src="/images/avatar2.jpg" alt="MaxBlo.ga" title="MaxBlo.ga">
       </a>
-      <h1><a href="http://maxblo.ga">MaxBlo.ga</a></h1>
+      <h1><a href="">MaxBlo.ga</a></h1>
 
-<p>A Blog about IT and IOT</p>
+<p>A Blog about IT and IOT</p>  
+    <ul class="list">
+      <li><a href="/category/linux-sysadmin.html">Linux Sysadmin</a> (2)</li>
+      <li><a href="/category/python.html">Python</a> (3)</li>
+      <li><a href="/category/raspberry-pi.html">Raspberry pi</a> (3)</li>
+      <li><a href="/category/webcams.html">Webcams</a> (1)</li>
+      <li><a href="/category/windows.html">Windows</a> (1)</li>
+    </ul>
+
 
       <ul class="social">
       </ul>
@@ -76,7 +84,7 @@
   <main>
 
     <nav>
-      <a href="http://maxblo.ga">    Home
+      <a href="">    Home
 </a>
 
       <a href="/archives.html">Archives</a>
@@ -91,7 +99,7 @@
       
     <h1 id="static-site-with-python-pelican">How to create a static site with python and host it for free</h1>
     <p>
-          Posted on Thu 25 January 2018 in <a href="http://maxblo.ga/category/python.html">Python</a>
+          Posted on Thu 25 January 2018 in <a href="/category/python.html">Python</a>
 
 
         &#8226; 3 min read
@@ -104,18 +112,18 @@
 <p><a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a> is a static site generator, written in Python, that requires no database or server-side logic.</p>
 <h3>Installing Pelican</h3>
 <p>The easiest way to install Pelican is using <code>pip</code>, use the command below to install it along with the Markdown module:</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo pip install pelican Markdown
+<div class="highlight"><pre><span></span>$ sudo pip install pelican Markdown
 </pre></div>
 
 
 <h3>Initialize your site</h3>
 <p>Once Pelican has been installed, you can create a skeleton project via the <code>pelican-quickstart</code> command, which begins by asking some questions about your site:</p>
-<div class="highlight"><pre><span class="nv">$ </span>pelican-quickstart
+<div class="highlight"><pre><span></span>$ pelican-quickstart
 </pre></div>
 
 
 <p>Once you answer all questions Pelican will create the files and folders shown below:</p>
-<div class="highlight"><pre>yourproject/
+<div class="highlight"><pre><span></span>yourproject/
 ├── content
 │   ├── (pages)          # These folders are not auto-created
 │   ├── (posts) 
@@ -132,7 +140,7 @@
 <p>Your site content should be placed in the content folder. If you plan to create a blog, you'll need to create a folder named <code>posts</code> in the <code>content</code> folder, if you need just static pages that are not chronological create a folder named <code>pages</code>.</p>
 <p>The images for your site or blog should be located in the <code>content/images</code> folder.</p>
 <p>You also need to tell Pelican that this folder holds your static content and images by adding the line below to 'pelicanconf.py' :</p>
-<div class="highlight"><pre>STATIC_PATHS = [&#39;images&#39;]
+<div class="highlight"><pre><span></span>STATIC_PATHS = [&#39;images&#39;]
 </pre></div>
 
 
@@ -141,7 +149,7 @@
 <p>To create a new page or blog post you need to create a file in the <code>pages</code> or <code>posts</code> folder.
 This file needs to be ending in .md, .markdown, .mkd, or .mdown and contain text formated with markdown syntax. </p>
 <p>Your file may contain the following meta-data (not all values are mandatory)</p>
-<div class="highlight"><pre>Title: My post title
+<div class="highlight"><pre><span></span>Title: My post title
 Date: 2018-02-03 11:21
 Modified: 2018-02-05 17:30
 Category: Python
@@ -155,7 +163,7 @@ This is the content of my first blog post.
 
 
 <p>To add images to your content use the markdown below:</p>
-<div class="highlight"><pre><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">](</span><span class="n">images</span><span class="o">/</span><span class="n">filename</span><span class="p">.</span><span class="n">jpg</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">](</span><span class="n">images</span><span class="o">/</span><span class="n">filename</span><span class="p">.</span><span class="n">jpg</span><span class="p">)</span>
 </pre></div>
 
 
@@ -163,12 +171,12 @@ This is the content of my first blog post.
 <p>Once you create all the pages and articles its time to generate your site html.</p>
 <h3>Generating your site HTML</h3>
 <p>To generate your site, go to your project root folder and run the command below:</p>
-<div class="highlight"><pre><span class="nv">$ </span>pelican content
+<div class="highlight"><pre><span></span>$ pelican content
 </pre></div>
 
 
 <p>You can also use:</p>
-<div class="highlight"><pre><span class="nv">$ </span>pelican -r
+<div class="highlight"><pre><span></span>$ pelican -r
 </pre></div>
 
 
@@ -177,14 +185,14 @@ This is the content of my first blog post.
 <h3>Preview your site</h3>
 <p>Its useful to view your site before uploading it to your hosting. To run a local web server use one of the commands below.</p>
 <p>For Python 2, run:</p>
-<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>output
-<span class="nv">$ </span>python -m SimpleHTTPServer
+<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> output
+$ python -m SimpleHTTPServer
 </pre></div>
 
 
 <p>For Python 3, run:</p>
-<div class="highlight"><pre><span class="nv">$ </span><span class="nb">cd </span>output
-<span class="nv">$ </span>python -m http.server
+<div class="highlight"><pre><span></span>$ <span class="nb">cd</span> output
+$ python -m http.server
 </pre></div>
 
 
@@ -193,16 +201,16 @@ This is the content of my first blog post.
 <p>One of the best free places to host your static site for free is <a href="https://pages.github.com/" target="_blank">Github Pages</a></p>
 <p>On github pages you'll find detailed instructions how to upload your site with git.
 If you don't have git installed you can install it with:</p>
-<div class="highlight"><pre><span class="nv">$ </span>sudo apt-get install git
+<div class="highlight"><pre><span></span>$ sudo apt-get install git
 </pre></div>
 
 
-<p>Once your site is uploaded to github pages its url will look like this https://username.github.io.</p>
+<p>Once your site is uploaded to github pages its url will look like this <code>https://username.github.io</code>.</p>
 <p>You can change this by adding a custom domain to your github repository.
 If you don't have a domain name you can get one for free from http://www.dot.tk - they offer five domain extension for free (.tk, .ga, .ml, .cf and .gq).</p>
 <p>First add your domain name to your new github repository by following <a href="https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/" target="_blank">these</a> instructions.</p>
 <p>Then point your custom domain to the following IP addresses:</p>
-<div class="highlight"><pre>192.30.252.153
+<div class="highlight"><pre><span></span>192.30.252.153
 192.30.252.154
 </pre></div>
 
@@ -211,22 +219,22 @@ If you don't have a domain name you can get one for free from http://www.dot.tk 
   </div>
   <div class="tag-cloud">
     <p>
-      <a href="http://maxblo.ga/tag/python.html">python</a>
-      <a href="http://maxblo.ga/tag/pelican.html">pelican</a>
-      <a href="http://maxblo.ga/tag/github.html">github</a>
-      <a href="http://maxblo.ga/tag/free-hosting.html">free hosting</a>
-      <a href="http://maxblo.ga/tag/free-domain.html">free domain</a>
-      <a href="http://maxblo.ga/tag/jinja.html">Jinja</a>
+      <a href="/tag/python.html">python</a>
+      <a href="/tag/pelican.html">pelican</a>
+      <a href="/tag/github.html">github</a>
+      <a href="/tag/free-hosting.html">free hosting</a>
+      <a href="/tag/free-domain.html">free domain</a>
+      <a href="/tag/jinja.html">Jinja</a>
     </p>
   </div>
 
 
   <div class="neighbors">
-    <a class="btn float-left" href="http://maxblo.ga/build-cheap-multi-room-audio-system.html" title="Build a Cheap Multi-Room Audio System">
+    <a class="btn float-left" href="/build-cheap-multi-room-audio-system.html" title="Build a Cheap Multi-Room Audio System">
       <i class="fa fa-angle-left"></i>     Previous Post
 
     </a>
-    <a class="btn float-right" href="http://maxblo.ga/translate-your-flask-site.html" title="How to translate your Flask site with Babel">
+    <a class="btn float-right" href="/translate-your-flask-site.html" title="How to translate your Flask site with Babel">
           Next Post
  <i class="fa fa-angle-right"></i>
     </a>
@@ -236,9 +244,9 @@ If you don't have a domain name you can get one for free from http://www.dot.tk 
     <h4>    You might enjoy
 </h4>
     <ul class="related-posts">
-      <li><a href="http://maxblo.ga/translate-your-flask-site.html">How to translate your Flask site with Babel</a></li>
-      <li><a href="http://maxblo.ga/python-modules.html">Python Modules I Use</a></li>
-      <li><a href="http://maxblo.ga/multiple-python-sites-on-one-host.html">How to Host Multiple Python Apps on the Same Host With Nginx</a></li>
+      <li><a href="/multiple-python-sites-on-one-host.html">How to Host Multiple Python Apps on the Same Host With Nginx</a></li>
+      <li><a href="/python-modules.html">Python Modules I Use</a></li>
+      <li><a href="/translate-your-flask-site.html">How to translate your Flask site with Babel</a></li>
     </ul>
   </div>
 
@@ -274,8 +282,8 @@ If you don't have a domain name you can get one for free from http://www.dot.tk 
   "@context" : "http://schema.org",
   "@type" : "Blog",
   "name": " MaxBlo.ga ",
-  "url" : "http://maxblo.ga",
-  "image": "http://maxblo.ga/images/avatar2.jpg",
+  "url" : "",
+  "image": "/images/avatar2.jpg",
   "description": "Notes about the things I learn"
 }
 </script>
