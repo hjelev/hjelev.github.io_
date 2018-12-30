@@ -5,29 +5,36 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/</loc>
-<lastmod>2018-12-31T00:04:22-00:00</lastmod>
+<lastmod>2018-12-31T00:26:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/archives.html</loc>
-<lastmod>2018-12-31T00:04:22-00:00</lastmod>
+<lastmod>2018-12-31T00:26:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tags.html</loc>
-<lastmod>2018-12-31T00:04:22-00:00</lastmod>
+<lastmod>2018-12-31T00:26:19-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/categories.html</loc>
-<lastmod>2018-12-31T00:04:22-00:00</lastmod>
+<lastmod>2018-12-31T00:26:19-00:00</lastmod>
 <changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/win-10-auto-login.html</loc>
+<lastmod>2018-12-31T00:00:00+01:00</lastmod>
+<changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
@@ -131,7 +138,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/category/windows.html</loc>
-<lastmod>2018-01-15T00:00:00+00:09</lastmod>
+<lastmod>2018-12-31T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -151,8 +158,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/modules.html</loc>
-<lastmod>2018-01-20T00:00:00+00:09</lastmod>
+<loc>/tag/windows-10.html</loc>
+<lastmod>2018-12-31T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -167,6 +174,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/tag/rpi.html</loc>
 <lastmod>2018-01-21T00:00:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>/tag/modules.html</loc>
+<lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -200,7 +214,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/flask.html</loc>
+<loc>/tag/multi-language.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -249,6 +263,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
+<loc>/tag/auto-login.html</loc>
+<lastmod>2018-12-31T00:00:00+00:09</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
 <loc>/tag/raspberry-pi.html</loc>
 <lastmod>2018-01-20T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
@@ -284,8 +305,8 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/multi-room.html</loc>
-<lastmod>2018-01-21T00:00:00+00:09</lastmod>
+<loc>/tag/github.html</loc>
+<lastmod>2018-03-08T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -312,15 +333,15 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/github.html</loc>
-<lastmod>2018-03-08T00:00:00+00:09</lastmod>
+<loc>/tag/multi-room.html</loc>
+<lastmod>2018-01-21T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>/tag/windows.html</loc>
-<lastmod>2018-01-15T00:00:00+00:09</lastmod>
+<lastmod>2018-12-31T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -340,7 +361,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-<loc>/tag/multi-language.html</loc>
+<loc>/tag/flask.html</loc>
 <lastmod>2018-02-24T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -376,7 +397,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>/author/masoko.html</loc>
-<lastmod>2018-03-08T00:00:00+00:09</lastmod>
+<lastmod>2018-12-31T00:00:00+00:09</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
